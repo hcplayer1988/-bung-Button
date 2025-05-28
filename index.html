@@ -10,9 +10,10 @@
     <h1>Aufgabe 1</h1>
     <p>Schreibe eine Funktion, die eine Zahl als Note (zwischen 1 und 6) entgegennimmt und eine entsprechende Nachricht
         in der Konsole ausgibt, ob die Note „bestanden“ (Note 1-4) oder „nicht bestanden“ (Note 5 und 6) ist.</p>
-        <button onclick="CheckGrade()">Klick Aufgabe 1</button>
-        <input type="text" id="ChekNumberinput">
-        <p id="outputCheckNumber"></p>
+        <input id="grade" type="number" min="1" max="6" onclick="clearField()">
+        <button onclick="checkGrade()">Check Grade</button>
+        <div id="gradeResult"></div>
+
         
 
     <h1>Aufgabe 2</h1>
